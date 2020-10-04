@@ -1,0 +1,184 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+  body {
+    line-height: 1; }
+  
+  ol, ul {
+    list-style: none;
+    line-height: 30px; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none; }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+  html, body {
+    height: 100%; }
+
+/* #My Shit
+================================================== */
+
+  html{
+    background-color: #ffffff;
+    color: #2C2C2C;
+    font-family: "Dosis",sans-serif; 
+    font-size: calc(8px + .5vw);   
+    font-style: normal;
+    font-weight: normal;
+    line-height:150%;
+    margin-top: calc(32px + 4vw);
+    /*margin-right:12.5%;
+    margin-left:12.5%;*/
+    }
+
+  p{
+    font-family: "Montserrat", sans-serif;
+    }
+    
+  nav{
+    background-color:#ffffff;
+    display:block;
+    margin: auto 10%;
+    position:fixed;
+    text-align:right;
+    top: 0;
+    width:80%;
+    }
+
+  main{
+    margin: auto 10%;
+    width:80%;
+  }
+  footer{
+    margin: auto 10%;
+    text-align:right;
+    width:80%;
+  }
+
+  a{
+   color: #2C2C2C;
+   outline: 0; 
+   text-decoration: none;
+  }
+
+  a:hover, a:focus{
+    color: #fabada; 
+  }
+      
+  #contactme{
+    font-family: "Dosis",sans-serif;
+    font-size: calc(8px + .5vw);
+    font-style: normal;
+    font-weight: normal;
+    line-height:150%;
+  }
+
+  #portrait{
+    width: 20%;
+  }
+
+  #myself{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  #hello{
+    color: #2C2C2C;
+    font-family: "dosis", sans-serif;
+    font-weight: normal;
+    font-size: calc(20px + 0.5vw);
+    line-height: 150%;
+  }
+
+
+  .card{
+    display: flex;
+    height: 32%;
+    padding-top: 2%;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
+  }
+
+  .card_description{
+    padding-left: 3%;
+    width: 70%;
+  }
+  .odd .card_description{
+    padding-left: 0%;
+    padding-right: 3%;
+    width: 70%;
+}
+  .card_picture{
+    text-align: center;
+  }
+
+   .card_headline{
+    color: #2C2C2C;
+   font-family: "dosis", sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+    line-height: 100%;
+  }
+
+  .card_co{
+   font-family: "dosis", sans-serif;
+   font-weight: normal;
+   font-size: calc(15px + 0.5);
+    line-height: 300%;
+    color: #2C2C2C;
+  }
+
+  .card_date{
+    color: #2C2C2C;
+    font-family: "dosis", sans-serif;
+    line-height: 150%;
+    font-size: calc(15px + 0.5);
+    font-weight: normal;
+  }
+  .description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(15px + 0.5);
+  }
+  #the_end{
+    padding-top: 5vh;
+    text-align: center;
+  }
+
+  img{
+    max-width:100%;
+  }
+
+  @media only screen and (max-width: 415px) {
+    .card {
+      display: block;
+    }
+    .odd {
+      flex-direction: row;
+    }
+    .card_description{
+      padding-left: 0%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  }
