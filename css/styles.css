@@ -138,7 +138,6 @@
   }
 
   .card_picture{
-    max-width: 65%;
     text-align: center;
   }
 
@@ -215,4 +214,10 @@
       margin: 0 auto;
       width: 1024px;
     }
+
+
+    .card_picture{
+      text-align: center;
+    }
+
   }
