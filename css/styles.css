@@ -138,6 +138,7 @@
   }
 
   .card_picture{
+    max-width: 65%;
     text-align: center;
   }
 
@@ -206,6 +207,14 @@
       padding-top: 2%;
       padding-bottom: 2%;
     }
+
+    .card_picture{
+      max-width: 100%;
+    }
+    
+    .card_description{
+      width: 100%;
+    }
   }
 
   /* Big screens */
@@ -214,10 +223,4 @@
       margin: 0 auto;
       width: 1024px;
     }
-
-
-    .card_picture{
-      text-align: center;
-    }
-
   }
