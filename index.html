@@ -14,17 +14,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <div id="contactme">
-                <p><a href="tel:+34666345622">666 345 622</a></p>
-                <p><a href="mailto:irene.v.p@gmail.com?Subject=Hola Irene, me encanta tu portfolio :)"">irene.v.p@gmail.com</a></p>
-                <a href=" https://www.linkedin.com/in/irene-vera-2021/">Linkedin</a> · <a
-                        href="https://medium.com/@irene.v.p">Medium</a> · <a href="">Behance</a></p>
-            </div>
+            <div id="nav_container">
+                <div id="aboutme">
+                    <a href="TODO" target="_blanck">
+                        About me
+                    </a>
+                </div>
+                <div id="contactme">
+                    <p>
+                        <a href="tel:+34666345622">666 345 622</a>
+                    </p>
+                    <p>
+                        <a href="mailto:irene.v.p@gmail.com?Subject=Hola Irene, me encanta tu portfolio :)" target="_blank">irene.v.p@gmail.com</a>
+                    </p>
+                    <a href=" https://www.linkedin.com/in/irene-vera-2021/" target="_blank">Linkedin</a>
+                    ·
+                    <a href="https://medium.com/@irene.v.p" target="_blank">Medium</a>
+                    <!-- ·
+                    <a href="TODO" target="_blank">Behance</a> -->
+                    ·
+                    <a href="TODO_CURRICULUM" target="_blank">Currículum</a>
+                  </p>
+                </div>
+              </div>
             <hr />
         </nav>
 
@@ -33,32 +51,42 @@
 
     <main>
         <div id="myself">
-            <img id="portrait" src="images/me_lime.png" <!--onmouseover="this.src='images/Group 3.png'"
+            <!-- onmouseover="this.src='images/Group 3.png'" -->
+            <img id="portrait" src="images/me_lime.png"
                 onmouseout="this.src='images/me_lime.png'" />
             <p id="hello"> <span>Hello!</span> I'm Irene</p>
-            <p> I am a digital product designer based in Madrid. </p>
+            <p>
+                I am a digital product designer based in Madrid. 
+            </p>
+            <!-- <p>
+                If you want to know a bit more about me just click <a href="TODO" target="_blank">here</a>.
+            </p>
+            <p>
+                Here you can find some of my latest projects.
+            </p> -->
         </div>
-
 
         <div class="grid">
             <div class="card">
-
                 <div class="card_picture">
-                    <a href="ENLACE MEDIUM"> <img
-                            src="images/projectpic.png"
-                            alt="Pantallas de Heilsa" />
+                    <a href="images/heilsa.png"
+                       class="zoom_in"
+                       target="_blank">
+                      <img
+                          src="images/heilsa.png"
+                          alt="Pantallas de Heilsa" />
                     </a>
                 </div>
 
                 <div class="card_description">
-                    <a href="!--ENLACE MEDIUM-->">
-                        <p class="card_headline">Loqueseapp</p>
+                    <!-- <a href="ENLACE MEDIUM" target="_blank"> -->
+                        <p class="card_headline">Heilsa</p>
                         <p class="card_co">IRONHACK · 2020</p>
                         <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Consectetur odio impedit ea similique tenetur amet. Voluptates consequuntur vero iusto?
                             Dignissimos repudiandae beatae quo. Eos officiis deserunt beatae explicabo blanditiis quas
                         </p>
-                    </a>
+                    <!-- </a> -->
                 </div>
 
             </div>
@@ -66,19 +94,22 @@
             <div class="card odd">
 
                 <div class="card_picture">
-                    <a href="!--ENLACE MEDIUM-->"> <img src="images/heilsa.jpg" alt="Pantallas de Heilsa" />
+                    <a href="images/encuentro_vegano.png"
+                       class="zoom_in"
+                       target="_blank">
+                      <img src="images/encuentro_vegano.png" alt="Pantallas de Encuentro Vegano" />
                     </a>
                 </div>
 
                 <div class="card_description">
-                    <a href="!--ENLACE MEDIUM-->">
-                        <p class="card_headline">Heilsa</p>
+                    <!-- <a href="ENLACE MEDIUM" target="_blank"> -->
+                        <p class="card_headline">Encuentro Vegano</p>
                         <p class="card_co">IRONHACK · 2020</p>
                         <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Consectetur odio impedit ea similique tenetur amet. Voluptates consequuntur vero iusto?
                             Dignissimos repudiandae beatae quo. Eos officiis deserunt beatae explicabo blanditiis quas
                         </p>
-                    </a>
+                    <!-- </a> -->
                 </div>
 
             </div>
@@ -86,21 +117,24 @@
             <div class="card">
 
                 <div class="card_picture">
-                    <a href="!--ENLACE MEDIUM-->"> <img
-                            src="images/instagram.jpg"
+                    <a href="images/instagram_feature.png"
+                       class="zoom_in"
+                       target="_blank">
+                        <img
+                            src="images/instagram_feature.png"
                             alt="Pantallas de Heilsa" />
                     </a>
                 </div>
 
                 <div class="card_description">
-                    <a href="!--ENLACE MEDIUM-->">
+                    <!-- <a href="ENLACE MEDIUM" target="_blank"> -->
                         <p class="card_headline">"Audiencias" for Instagram</p>
                         <p class="card_co">IRONHACK · 2020</p>
                         <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Consectetur odio impedit ea similique tenetur amet. Voluptates consequuntur vero iusto?
                             Dignissimos repudiandae beatae quo. Eos officiis deserunt beatae explicabo blanditiis quas
                         </p>
-                    </a>
+                    <!-- </a> -->
                 </div>
 
             </div>
@@ -113,11 +147,5 @@
         <hr />
         <p id="the_end">Made with ☕ and 🎶</p>
     </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        </script>
 </body>
-
 </html>

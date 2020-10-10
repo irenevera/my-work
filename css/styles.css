@@ -39,34 +39,37 @@
   html{
     background-color: #ffffff;
     color: #2C2C2C;
-    font-family: "Dosis",sans-serif; 
-    font-size: calc(8px + .5vw);   
+    font-family: "Dosis",sans-serif;
+    font-size: calc(8px + .5vw);
     font-style: normal;
     font-weight: normal;
     line-height:150%;
     margin-top: calc(32px + 4vw);
-    /*margin-right:12.5%;
-    margin-left:12.5%;*/
     }
 
   p{
     font-family: "Montserrat", sans-serif;
     }
-    
+
   nav{
     background-color:#ffffff;
-    display:block;
     margin: auto 10%;
     position:fixed;
-    text-align:right;
     top: 0;
     width:80%;
-    }
+    z-index: 1;
+  }
+
+  #nav_container {
+    display:flex;
+    justify-content: space-between;
+  }
 
   main{
     margin: auto 10%;
     width:80%;
   }
+
   footer{
     margin: auto 10%;
     text-align:right;
@@ -75,14 +78,19 @@
 
   a{
    color: #2C2C2C;
-   outline: 0; 
+   outline: 0;
    text-decoration: none;
   }
 
   a:hover, a:focus{
-    color: #fabada; 
+    color: #fabada;
   }
-      
+
+  #aboutme {
+    align-self: flex-end;
+    line-height:150%;
+  }
+
   #contactme{
     font-family: "Dosis",sans-serif;
     font-size: calc(8px + .5vw);
@@ -100,7 +108,7 @@
     padding-top: 5%;
     text-align: center;
   }
-  
+
   #hello{
     color: #2C2C2C;
     font-family: "dosis", sans-serif;
@@ -108,7 +116,6 @@
     font-size: calc(20px + 0.5vw);
     line-height: 150%;
   }
-
 
   .card{
     display: flex;
@@ -128,8 +135,10 @@
     padding-left: 0%;
     padding-right: 3%;
     width: 70%;
-}
+  }
+
   .card_picture{
+    max-width: 65%;
     text-align: center;
   }
 
@@ -169,7 +178,24 @@
     max-width:100%;
   }
 
-  @media only screen and (max-width: 415px) {
+  /*Zoom In*/
+  .zoom_in {
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
+  }
+  .zoom_in img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .zoom_in:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 768px) {
     .card {
       display: block;
     }
@@ -180,5 +206,13 @@
       padding-left: 0%;
       padding-top: 2%;
       padding-bottom: 2%;
+    }
+  }
+
+  /* Big screens */
+  @media only screen and (min-width: 1025px) {
+    body, nav, main {
+      margin: 0 auto;
+      width: 1024px;
     }
   }
