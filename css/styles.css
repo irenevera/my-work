@@ -86,18 +86,19 @@
     color: #fabada;
   }
 
-  #aboutme {
+  #nav_container .left {
     align-self: flex-end;
     line-height:150%;
   }
 
-  #contactme{
+  #nav_container .right{
     font-family: "Dosis",sans-serif;
     font-size: calc(8px + .5vw);
     font-style: normal;
     font-weight: normal;
     line-height:150%;
     text-align: right;
+    ;
   }
 
   #portrait{
@@ -118,6 +119,11 @@
     line-height: 150%;
   }
 
+  #hello .highlight{
+    color: #fabada;
+    font-weight: bold;
+  }
+
   .card{
     display: flex;
     height: 32%;
@@ -126,6 +132,10 @@
 
   .odd {
     flex-direction: row-reverse;
+  }
+
+  .card_co .highlight {
+    font-weight: bold;
   }
 
   .card_description{
@@ -143,20 +153,26 @@
     text-align: center;
   }
 
-   .card_headline{
+  .card_headline{
     color: #2C2C2C;
-   font-family: "dosis", sans-serif;
-   font-size: 20px;
-   font-weight: bold;
+    font-family: "dosis", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 100%;
+  }
+
+  .separator {
+    padding-bottom: 15px;
+    border-bottom: thin solid lightgray;
+    width: 30%;
   }
 
   .card_co{
    font-family: "dosis", sans-serif;
    font-weight: normal;
    font-size: calc(15px + 0.5);
-    line-height: 300%;
-    color: #2C2C2C;
+   line-height: 300%;
+   color: #2C2C2C;
   }
 
   .card_date{
