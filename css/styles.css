@@ -97,6 +97,7 @@
     font-style: normal;
     font-weight: normal;
     line-height:150%;
+    text-align: right;
   }
 
   #portrait{
@@ -211,7 +212,7 @@
     .card_picture{
       max-width: 100%;
     }
-    
+
     .card_description{
       width: 100%;
     }
