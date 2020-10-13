@@ -39,7 +39,7 @@
   html{
     background-color: #ffffff;
     color: #2C2C2C;
-    font-family: "Dosis",sans-serif;
+    font-family: "Helvetica",sans-serif;
     font-size: calc(8px + .5vw);
     font-style: normal;
     font-weight: normal;
@@ -48,7 +48,7 @@
     }
 
   p{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Helvetica", sans-serif;
     }
 
   nav{
@@ -92,7 +92,7 @@
   }
 
   #nav_container .right{
-    font-family: "Dosis",sans-serif;
+    font-family: "Helvetica",sans-serif;
     font-size: calc(8px + .5vw);
     font-style: normal;
     font-weight: normal;
@@ -113,7 +113,7 @@
 
   #hello{
     color: #2C2C2C;
-    font-family: "dosis", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-weight: normal;
     font-size: calc(20px + 0.5vw);
     line-height: 150%;
@@ -155,7 +155,7 @@
 
   .card_headline{
     color: #2C2C2C;
-    font-family: "dosis", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 100%;
@@ -168,7 +168,7 @@
   }
 
   .card_co{
-   font-family: "dosis", sans-serif;
+   font-family: "Helvetica", sans-serif;
    font-weight: normal;
    font-size: calc(15px + 0.5);
    line-height: 300%;
@@ -177,14 +177,16 @@
 
   .card_date{
     color: #2C2C2C;
-    font-family: "dosis", sans-serif;
+    font-family: "Helvetica", sans-serif;
     line-height: 150%;
     font-size: calc(15px + 0.5);
     font-weight: normal;
   }
   .description{
-    font-family: 'Montserrat', sans-serif;
-    font-size: calc(15px + 0.5);
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 0;
   }
   #the_end{
     padding-top: 5vh;
