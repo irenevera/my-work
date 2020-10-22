@@ -7,36 +7,41 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline; }
-  
+
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
-  
+
   body {
     line-height: 1; }
-  
+
   ol, ul {
     list-style: none;
     line-height: 30px; }
-  
+
   blockquote, q {
     quotes: none; }
-  
+
   blockquote:before, blockquote:after,
   q:before, q:after {
     content: '';
     content: none; }
-  
+
   table {
     border-collapse: collapse;
     border-spacing: 0; }
-  
+
   html, body {
     height: 100%; }
 
 /* #My Shit
 ================================================== */
+  hr {
+    background: linear-gradient(to left, #FBAA9C, #F3FFAc, #4C9EAF);
+    border: none;
+    height: 2px;
+  }
 
-  html{
+  html {
     background-color: #ffffff;
     color: #2C2C2C;
     font-family: "Helvetica",sans-serif;
@@ -44,36 +49,35 @@
     font-style: normal;
     font-weight: normal;
     line-height:150%;
-    margin-top: calc(32px + 4vw);
-    }
+    margin: 0 auto;
+    max-width: 1024px;
+  }
 
   p{
     font-family: "Helvetica", sans-serif;
-    }
+  }
 
-  nav{
+  main{
+    padding-top: 130px;
+  }
+
+  nav {
     background-color:#ffffff;
-    margin: auto 10%;
-    position:fixed;
     top: 0;
-    width:80%;
+    position: fixed;
+    width: 1024px;
     z-index: 1;
   }
 
   #nav_container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-  }
-
-  main{
-    margin: auto 10%;
-    width:80%;
+    padding-top: 28px;
   }
 
   footer{
-    margin: auto 10%;
+    padding-top: 24px;
     text-align:right;
-    width:80%;
   }
 
   a{
@@ -83,17 +87,28 @@
   }
 
   a:hover, a:focus{
-    color: #fabada;
+    color: #FBB5AB;
   }
 
   #nav_container .left {
     align-self: flex-end;
     line-height:150%;
+    text-transform: uppercase;
+  }
+
+  #nav_container .left a {
+    font-size: 14px;
+    padding-right: 64px;
+  }
+
+  #nav_container .left a.selected {
+    font-weight: bold;
   }
 
   #nav_container .right{
+    align-self: stretch;
     font-family: "Helvetica",sans-serif;
-    font-size: calc(8px + .5vw);
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
     line-height:150%;
@@ -101,33 +116,33 @@
     ;
   }
 
-  #portrait{
-    width: 20%;
-  }
-
   #myself{
-    padding-bottom: 5%;
-    padding-top: 5%;
     text-align: center;
   }
 
   #hello{
     color: #2C2C2C;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: normal;
-    font-size: calc(20px + 0.5vw);
+    font-size: 30px;
     line-height: 150%;
   }
 
   #hello .highlight{
-    color: #fabada;
+    color: #4097AA;
     font-weight: bold;
+  }
+
+  .intro {
+    font-family: "Dosis", sans-serif;
+    font-size: 14px;
+    padding-bottom: 50px;
   }
 
   .card{
     display: flex;
     height: 32%;
-    padding-top: 2%;
+    padding-top: 50px;
   }
 
   .odd {
@@ -140,37 +155,37 @@
 
   .card_description{
     padding-left: 3%;
-    width: 70%;
+    width: 35%;
   }
   .odd .card_description{
     padding-left: 0%;
     padding-right: 3%;
-    width: 70%;
+    width: 35%;
   }
 
   .card_picture{
-    max-width: 65%;
+    width: 65%;
     text-align: center;
   }
 
   .card_headline{
     color: #2C2C2C;
     font-family: "Helvetica", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     line-height: 100%;
   }
 
   .separator {
     padding-bottom: 15px;
-    border-bottom: thin solid lightgray;
+    border-bottom: thin solid #BDBDBD;
     width: 30%;
   }
 
   .card_co{
    font-family: "Helvetica", sans-serif;
    font-weight: normal;
-   font-size: calc(15px + 0.5);
+   font-size: 14px;
    line-height: 300%;
    color: #2C2C2C;
   }
@@ -182,19 +197,36 @@
     font-size: calc(15px + 0.5);
     font-weight: normal;
   }
+
   .description{
     font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
     padding: 8px 0;
   }
+
   #the_end{
-    padding-top: 5vh;
+    font-size: 14px;
+    padding: 5px 0 15px 0;
     text-align: center;
+  }
+
+  #portrait {
+    width: 20%;
   }
 
   img{
     max-width:100%;
+  }
+
+  #aboutme {
+    font-size: 14px;
+    font-family: 'Dosis';
+    line-height: 16px;
+  }
+
+  #aboutme p{
+    padding: 8px 0;
   }
 
   /*Zoom In*/
@@ -214,32 +246,59 @@
   }
 
   /* Small screens */
+  @media only screen and (max-width: 1044px) {
+    html {
+      margin: 0 10px;
+    }
+    nav {
+      width: calc(100% - 20px);
+    }
+  }
+
   @media only screen and (max-width: 768px) {
+    #nav_container {
+      padding-top: 10px;
+    }
+
+    #nav_container .left a {
+      padding-right: 12px;
+    }
+
+    main {
+      padding-top: 100px;
+    }
+
+    .intro {
+      padding-bottom: 24px;
+    }
     .card {
       display: block;
+      padding: 16px 0;
     }
+
     .odd {
       flex-direction: row;
     }
+
     .card_description{
       padding-left: 0%;
       padding-top: 2%;
       padding-bottom: 2%;
+      width: 100%;
+    }
+
+    .odd .card_description {
+      padding-left: 0%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      width: 100%;
     }
 
     .card_picture{
-      max-width: 100%;
-    }
-
-    .card_description{
       width: 100%;
     }
-  }
 
-  /* Big screens */
-  @media only screen and (min-width: 1025px) {
-    body, nav, main {
-      margin: 0 auto;
-      width: 1024px;
+    footer {
+      padding-top: 0;
     }
   }
