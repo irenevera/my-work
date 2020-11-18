@@ -18,19 +18,22 @@
     <meta name="author" content="Irene Vera, @runVerita">
     <meta name="keywords"
         content="irene, vera, CSS, HTML, HTML5, markup, style, web design, web development, ux, ui, madrid">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Irene Vera · Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chocolat.css" />
 </head>
 
 <body>
@@ -55,7 +58,7 @@
                     <p>
                         <a href=" https://www.linkedin.com/in/irene-vera-2021/" target="_blank">Linkedin</a>
                         ·
-                        <a href="https://medium.com/@irene.v.p" target="_blank">Medium</a>
+                        <a href="https://irene-v-p.medium.com/" target="_blank">Medium</a>
                         <!-- ·
                         <a href="TODO" target="_blank">Behance</a> -->
                         ·
@@ -85,49 +88,194 @@
 
         <div class="grid">
             <div class="card odd">
-                <div class="card_picture">
-                    <a href="images/hookalook.png"
-                      class="zoom_in"
-                      target="_blank">
-                      <img
-                          src="images/hookalook.png"
-                          alt="Hookalook! screens" />
-                    </a>
+                <div id="hookalook" class="card_picture">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <a href="images/hookalook.png"
+                              class="zoom_in"
+                              target="_blank">
+                              <img
+                                  src="images/hookalook.png"
+                                  alt="Hookalook! screens" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/hookalook_1.png"
+                              class="zoom_in"
+                              target="_blank">
+                              <img
+                                  src="images/hookalook_1.png"
+                                  alt="Brainstorming · Affinity Diagram · MoSCoW" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/hookalook_2.png"
+                              class="zoom_in"
+                              target="_blank">
+                              <img
+                                  src="images/hookalook_2.png"
+                                  alt="User persona" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/hookalook_3.png"
+                              class="zoom_in"
+                              target="_blank">
+                              <img
+                                  src="images/hookalook_3.png"
+                                  alt="How Vision AI from Google Cloud could be used" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/hookalook_4.png"
+                              class="zoom_in"
+                              target="_blank">
+                              <img
+                                  src="images/hookalook_4.png"
+                                  alt="Low-Fi & Mid-Fi" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="images/hookalook_5.png"
+                              class="zoom_in"
+                              target="_blank">
+                              <img
+                                  src="images/hookalook_5.png"
+                                  alt="Mood-board & Brand Attributes" />
+                            </a>
+                          </div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                    </div>
+
+
                 </div>
 
                 <div class="card_description">
-                    <!-- <a href="ENLACE MEDIUM" target="_blank"> -->
+                    <a href="https://irene-v-p.medium.com/case-study-hookalook-take-your-clothes-off-the-closet-6303f19f4860" target="_blank">
                         <p class="card_headline">hookalook!</p>
                         <div class="separator"></div>
                         <p class="card_co"><span class="highlight">IRONHACK</span> · 2020</p>
                         <p class="description">
                           A smart and cheerful app that boost your wardrobe!
                         </p>
-                    <!-- </a> -->
+                    </a>
                 </div>
 
             </div>
 
             <div class="card odd">
-                <div class="card_picture">
-                    <a href="images/heilsa.png"
-                       class="zoom_in"
-                       target="_blank">
-                      <img
-                          src="images/heilsa.png"
-                          alt="Heilsa screens" />
-                    </a>
+
+                <div id="heilsa" class="card_picture">
+                  <!-- Slider main container -->
+                  <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <a href="images/heilsa.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa.png"
+                                alt="Hookalook! screens" />
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="images/heilsa_1.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_1.png"
+                                alt="Brainstorming · Affinity Diagram · MoSCoW" />
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="images/heilsa_2.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_2.png"
+                                alt="User persona" />
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="images/heilsa_3.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_3.png"
+                                alt="How Vision AI from Google Cloud could be used" />
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="images/heilsa_4.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_4.png"
+                                alt="Low-Fi & Mid-Fi" />
+                          </a>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                          <a href="images/heilsa_5.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_5.png"
+                                alt="Mood-board & Brand Attributes" />
+                          </a>
+                        </div> -->
+                        <div class="swiper-slide">
+                          <a href="images/heilsa_6.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_7.png"
+                                alt="Mood-board & Brand Attributes" />
+                          </a>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                          <a href="images/heilsa_8.png"
+                            class="zoom_in"
+                            target="_blank">
+                            <img
+                                src="images/heilsa_8.png"
+                                alt="Mood-board & Brand Attributes" />
+                          </a>
+                        </div> -->
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                  </div>
+
+
                 </div>
 
                 <div class="card_description">
-                    <!-- <a href="ENLACE MEDIUM" target="_blank"> -->
+                    <a href="https://irene-v-p.medium.com/case-study-heilsa-complex-information-made-easy-4dfe6d0d01e4" target="_blank">
                         <p class="card_headline">Heilsa</p>
                         <div class="separator"></div>
                         <p class="card_co"><span class="highlight">IRONHACK</span> · 2020</p>
                         <p class="description">
                           A clever, intuitive and efficient tool to keep track of all your medical procedures.
                         </p>
-                    <!-- </a> -->
+                    </a>
                 </div>
 
             </div>
@@ -181,11 +329,39 @@
 
         </div>
 
-
     </main>
     <footer>
         <hr />
         <p id="the_end">Made with ☕ and 🎶</p>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/chocolat.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        Chocolat(document.querySelectorAll('.zoom_in'), {
+          imageSize: 'cover',
+          loop: true,
+          allowZoom: true
+        });
+        var mySwiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }
+      });
+      });
+    </script>
 </body>
 </html>

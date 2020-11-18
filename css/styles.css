@@ -245,6 +245,27 @@
     transform: scale(1.3);
   }
 
+  /* Gallery */
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    background: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    margin-top: 0;
+    padding: 0 10px;
+    top: 0;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+  }
+
   /* Small screens */
   @media only screen and (max-width: 1044px) {
     html {
