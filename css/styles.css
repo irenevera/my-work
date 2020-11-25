@@ -36,7 +36,7 @@
 /* #My Shit
 ================================================== */
   hr {
-    background: linear-gradient(to left, #FBAA9C, #F3FFAc, #4C9EAF);
+background: linear-gradient(270deg, #FBAA9C 0%, #F3FFAC 38.52%, #4C9EAF 95.28%);
     border: none;
     height: 2px;
   }
@@ -220,15 +220,11 @@
   }
 
   #aboutme {
-    /* display: flex; */
+    display: flex;
     font-size: 14px;
     font-family: 'Dosis';
     justify-content: space-between;
     line-height: 16px;
-  }
-
-  #aboutme p{
-    padding: 8px 0;
   }
 
   /*Zoom In*/
@@ -271,9 +267,17 @@
   /* Flip cards */
   .scene {
     flex: 1;
-    height: 260px;
-    margin: 10px 10px;
+    height: 517px;
+    margin: 10px 5px;
     perspective: 600px;
+  }
+
+  .scene.first {
+    margin-left: 0;
+  }
+
+  .scene.last {
+    margin-right: 0;
   }
 
   .flipcard {
@@ -295,7 +299,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    line-height: 260px;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -306,6 +309,13 @@
 
   .flipcard__face--front {
     /* background: red; */
+    background: linear-gradient(270deg, #FBAA9C 0%, #F3FFAC 38.52%, #4C9EAF 95.28%);
+    background-repeat: no-repeat;
+    background-size: 100% 165px;
+  }
+
+  .flipcard__face--front img{
+    padding-top: 64px;
   }
 
   .flipcard__face--back {
@@ -321,6 +331,10 @@
     }
     nav {
       width: calc(100% - 20px);
+    }
+
+    #aboutme {
+      flex-direction: column;
     }
   }
 
@@ -371,9 +385,6 @@
       padding-top: 0;
     }
 
-    #aboutme {
-      /* flex-direction: column; */
-    }
   }
 
   h1 {
@@ -382,19 +393,54 @@
     font-size: 26px;
     font-weight: bold;
     line-height: 100%;
+    text-align: center;
+    padding: 10px 0 26px 0;
   }
 
   h1 .highlight {
     color: #4097AA;
+    font-size: 20px;
     font-weight: bold;
   }
 
-  h2 {
+  .question{
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 200%;
+    font-size: 22px;
+    line-height: 100%;
     color: #2C2C2C;
+    padding: 70px 10px 10px 10px
+  }
+
+  .answer-title{
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 100%;
+    color: #8DC4AE;
+    padding: 30px 44px;
+  }
+
+  .answer-title.false{
+    color: #FBAE9D;
+  }
+
+  .answer-description{
+    font-family: "Helvetica", sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2C2C2C;
+    padding: 0 40px 20px 40px;
+    text-align: left;
+  }
+
+  .answer-description.center{
+    text-align: center;
+  }
+
+  .answer-description.bold{
+    font-weight: bold;
   }
 
   .answers, .questions {
@@ -404,4 +450,9 @@
 
   .chocolat-wrapper.chocolat-visible {
     z-index: 200;
+  }
+
+  .contactme{
+    padding: 20px 0 10px 0;
+    text-align: center;
   }
