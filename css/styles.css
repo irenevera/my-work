@@ -45,7 +45,7 @@ background: linear-gradient(270deg, #FBAA9C 0%, #F3FFAC 38.52%, #4C9EAF 95.28%);
     background-color: #ffffff;
     color: #2C2C2C;
     font-family: "Helvetica",sans-serif;
-    font-size: calc(8px + .5vw);
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
     line-height:150%;
